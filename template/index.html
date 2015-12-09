@@ -1,175 +1,189 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
+
 <head>
-        <meta charset="UTF-8">
-        <title>openMarchante</title>
-        <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <title>openMarchante</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="main.js"></script>
 </head>
+
 <body>
-        <header id="barsup">
-        <aside id="moneda">$V</aside>
-                <nav id="menustat">Tel|User|Deseos|Carrito|Salir</nav>
-                <div class="reset"></div> <!--Considerar este encabezado como una barra de estado superior-->
-</header>
-<article>
+    <header id="barsup">
+        <aside id="moneda"><i class="fa fa-usd"></i><span>Curency</span><i class="fa fa-caret-down"></i></aside>
+        <nav id="menustat"> <i class="fa fa-phone"><span>5530363678</span></i><i class="fa fa-user"><span>Usuario</span></i><i class="fa fa-heart"><span>Deseos</span></i><i class="fa fa-shopping-cart"><span>Compras</span></i><i class="fa fa-sign-out"><span>Cerrar Sesión</span></i></nav>
+        <div class="reset"></div>
+        <!--Considerar este encabezado como una barra de estado superior-->
+    </header>
+    <article>
         <header>
-                <img src="img/logo.png" alt="logo">
-                <form action="index.html" method="get">
-                        <input type="text" name="busqueda" value="palabras" required placeholder="¿Que buscas?">
-                        <input type="submit" value="[icon]">
-                </form>
-                <aside id="CarStatus">
-                        [icon] 0 item(S) - $0.00
-                </aside>
+            <img src="img/logo.png" alt="logo">
+            <aside id="CarStatus">
+                <i class="fa fa-shopping-cart"></i> 0 item(S) - $0.00
+            </aside>
+            
+            <form action="index.html" method="get">
+                <input id="busqueda" type="text" name="busqueda" value="palabras" required placeholder="¿Que buscas?" /><button id="submit" type="submit"><i class="fa fa-search"></i>
+                </button>
+            </form>
         </header>
         <nav>
-                <ul>
-                        <li>
-                                Desktops
-                                <ul>
-                                        <li>PC</li>
-                                        <li>MAC</li>
-                                        <li class="sep"></li>
-                                        <li>Ver todo</li>
-                                </ul>
-                        </li>
-                        <li>Laptops y Notebooks
-                        <ul>
-                                <li>(0)</li>
-                                <li>(1)</li>
-                                <li class="sep"></li>
-                                <li>Ver todo</li>
-                        </ul>
-                        </li>
-                        <li>Componentes
-                                <ul>
-                                        <li>Ratones</li>
-                                        <li>Monitores</li>
-                                        <li>Impresoras</li>
-                                        <li>Scanners</li>
-                                        <li class="sep"></li>
-                                        <li>Ver todo</li>
-                                </ul>
-                        </li>
-                        <li>Tablets</li>
-                        <li>Software</li>
-                        <li>Smartphones</li>
-                        <li>Camaras</li>
-                        <li>Reproductores MP3
-                        <ul>
-                                <li>test 1(0)</li>
-                                <li>test 2(0)</li>
-                                <li>test 3(0)</li>
-                                <li>test 4(0)</li>
-                                <li>test 5(0)</li>
-                                <li>test 6(0)</li>
-                                <li>test 7(0)</li>
-                                <li>test 8(0)</li>
-                                <li>test 9(0)</li>
-                                <li class="sep"></li>
-                                <li>Ver todo</li>
-                        </ul></li>
-                </ul>
+            <ul>
+                <li><a>
+                    Desktops
+                    </a>
+                    <ul>
+                        <li><a href="">PC</a></li>
+                        <li><a href="">MAC</a></li>
+                        <li class="sep"></li>
+                        <li><a href="" class="mas"><strong><i>Ver todo</i></strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="">Laptops y Notebooks</a>
+                    <ul>
+                        <li><a href="">(0)</a></li>
+                        <li><a href="">(1)</a></li>
+                        <li class="sep"></li>
+                        <li><a href="" class="mas"><strong><i>Ver todo</i></strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="">Componentes</a>
+                    <ul>
+                        <li><a href="">Ratones</a></li>
+                        <li><a href="">Monitores</a></li>
+                        <li><a href="">Impresoras</a></li>
+                        <li><a href="">Scanners</a></li>
+                        <li class="sep"></li>
+                        <li><a href=""class="mas"><strong><i>Ver todo</i></strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="">Tablets</a></li>
+                <li><a href="">Software</a></li>
+                <li><a href="">Smartphones</a></li>
+                <li><a href="">Camaras</a></li>
+                <li><a href="">Reproductores MP3</a>
+                    <ul>
+                        <li><a href="">test 1(0)</a></li>
+                        <li><a href="">test 2(0)</a></li>
+                        <li><a href="">test 3(0)</a></li>
+                        <li><a href="">test 4(0)</a></li>
+                        <li><a href="">test 5(0)</a></li>
+                        <li><a href="">test 6(0)</a></li>
+                        <li><a href="">test 7(0)</a></li>
+                        <li><a href="">test 8(0)</a></li>
+                        <li><a href="">test 9(0)</a></li>
+                        <li class="sep"></li>
+                        <li><a href=""class="mas"><strong><i>Ver todo</i></strong></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="reset"></div>
         </nav>
         <header id="ruta">
-                [icon house|inicio] > laptops y Notebooks >
+            <i class="fa fa-home"></i> > laptops y Notebooks >
         </header>
         <section>
-<!--contenido principal-->
-       <div id="banner">
-               colocar imagen del tamaño de banner
-       </div>
-       <div id="ofertas">
-               <h3>OFERTAS</h3>
-               <aside>
-                       <img src="img/productos/0001.jpg" alt="macbook">
-                       <h4>Macbook</h4>
-                       <p>Intel Core 2 Duo processor Powered by an Intel Core 2 Duo processor at speeds up to 2.1..</p>
-                       <p><strong>$16002.00</strong></p>
-                       <div class="barinf">
-                               <aside>[icon car] Adicionar a carrito</aside>
-                               <aside>[icon heart] Adicionar a lista de deseos</aside>
-                       </div>
-               </aside>
-               <aside>
-                       <img src="img/productos/0002.jpg" alt="Iphone">
-                       <h4>Iphone</h4>
-                       <p>iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a nam..
+            <!--contenido principal-->
+            <div id="banner">
+               <img src="img/iphone.PNG" alt="iphone">
+            </div>
+            <div id="ofertas">
+                <h3>OFERTAS</h3>
+                <aside>
+                    <img src="img/productos/0001.jpg" alt="macbook">
+                    <h4>Macbook</h4>
+                    <p>Intel Core 2 Duo processor Powered by an Intel Core 2 Duo processor at speeds up to 2.1..</p>
+                    <p><strong>$16002.00</strong></p>
+                    <div class="barinf">
+                        <aside><i class="fa fa-cart-plus"></i> Adicionar a carrito</aside>
+                        <aside><i class="fa fa-heart"></i> Adicionar a lista de deseos</aside>
+                    </div>
+                </aside>
+                <aside>
+                    <img src="img/productos/0002.jpg" alt="Iphone">
+                    <h4>Iphone</h4>
+                    <p>iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a nam..
 
-                       </p>
-                       <p><strong>$12300.00</strong></p>
-                       <div class="barinf">
-                               <aside>[icon car] Adicionar a carrito</aside>
-                               <aside>[icon heart] Adicionar a lista de deseos</aside>
-                       </div>
-               </aside>
-               <aside>
-                       <img src="img/productos/0003.jpg" alt="monitor">
-                       <h4>Apple Cinema 30</h4>
-                       <p>The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed sp..</p>
-                       <p><strong>$11000.00</strong></p>
-                       <div class="barinf">
-                               <aside>[icon car] Adicionar a carrito</aside>
-                               <aside>[icon heart] Adicionar a lista de deseos</aside>
-                       </div>
-               </aside>
-               <aside>
-                       <img src="img/productos/0004.jpg" alt="camara">
-                       <h4>Canon EOS 5D</h4>
-                       <p>Canon's press material for the EOS 5D states that it 'defines (a) new D-SLR category', while we'r..</p>
-                       <p><strong>$$9800.00</strong></p>
-                       <div class="barinf">
-                               <aside>[icon car] Adicionar a carrito</aside>
-                               <aside>[icon heart] Adicionar a lista de deseos</aside>
-                       </div>
-               </aside>
-       </div>
-       <div id="marcas">
-               <div>
-                       <img src="img/marcas/001.jpg" alt="marca 1">
-                       <img src="img/marcas/002.jpg" alt="marca 2">
-                       <img src="img/marcas/003.jpg" alt="marca 3">
-               </div>
-       </div><!--este es un slider de marcas-->
+                    </p>
+                    <p><strong>$12300.00</strong></p>
+                    <div class="barinf">
+                        <aside><i class="fa fa-cart-plus"></i> Adicionar a carrito</aside>
+                        <aside><i class="fa fa-heart"></i> Adicionar a lista de deseos</aside>
+                    </div>
+                </aside>
+                <aside>
+                    <img src="img/productos/0003.jpg" alt="monitor">
+                    <h4>Apple Cinema 30</h4>
+                    <p>The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed sp..</p>
+                    <p><strong>$11000.00</strong></p>
+                    <div class="barinf">
+                        <aside><i class="fa fa-cart-plus"></i> Adicionar a carrito</aside>
+                        <aside><i class="fa fa-heart"></i> Adicionar a lista de deseos</aside>
+                    </div>
+                </aside>
+                <aside>
+                    <img src="img/productos/0004.jpg" alt="camara">
+                    <h4>Canon EOS 5D</h4>
+                    <p>Canon's press material for the EOS 5D states that it 'defines (a) new D-SLR category', while we'r..</p>
+                    <p><strong>$9800.00</strong></p>
+                    <div class="barinf">
+                        <aside><i class="fa fa-cart-plus"></i> Adicionar a carrito</aside>
+                        <aside><i class="fa fa-heart"></i> Adicionar a lista de deseos</aside>
+                    </div>
+                </aside>
+            </div>
+            <div class="reset"></div>
+            <div id="marcas">
+                <div>
+                    <img src="img/marcas/001.jpg" alt="marca 1">
+                    <img src="img/marcas/002.jpg" alt="marca 2">
+                    <img src="img/marcas/003.jpg" alt="marca 3">
+                </div>
+            </div>
+            <!--este es un slider de marcas-->
         </section>
-</article>
-<foote>
+    </article>
+    <footer>
         <aside>
-                <h3>Información</h3>
-                <ul>
-                        <li>Acerca de</li>
-                        <li>Información de Envio</li>
-                        <li>Politicas de Privacidad</li>
-                        <li>Terminos y Condiciones</li>
-                </ul>
+            <h3>Información</h3>
+            <ul>
+                <li>Acerca de</li>
+                <li>Información de Envio</li>
+                <li>Politicas de Privacidad</li>
+                <li>Terminos y Condiciones</li>
+            </ul>
         </aside>
         <aside>
-                <h3>Servicio al CLiente</h3>
-                <ul>
-                        <li>Contacto</li>
-                        <li>Devoluciones</li>
-                </ul>
+            <h3>Servicio al CLiente</h3>
+            <ul>
+                <li>Contacto</li>
+                <li>Devoluciones</li>
+            </ul>
         </aside>
         <aside>
-                <h3>Extras</h3>
-                <ul>
-                        <li>Marca</li>
-                        <li>Sugerencias</li>
-                        <li>Afiliados</li>
-                        <li>Especiales</li>
-                </ul>
+            <h3>Extras</h3>
+            <ul>
+                <li>Marca</li>
+                <li>Sugerencias</li>
+                <li>Afiliados</li>
+                <li>Especiales</li>
+            </ul>
         </aside>
         <aside>
-                <h3>Mi Cuenta</h3>
-                <ul>
-                        <li>Mi cuenta</li>
-                        <li>Historial de pedidos</li>
-                        <li>Lista de deseos</li>
-                        <li>Noticias</li>
-                </ul>
+            <h3>Mi Cuenta</h3>
+            <ul>
+                <li>Mi cuenta</li>
+                <li>Historial de pedidos</li>
+                <li>Lista de deseos</li>
+                <li>Noticias</li>
+            </ul>
         </aside>
-</foote>
-<!--        si es necesario aca incluimos los script en JS-->
-<script></script>
+    </footer>
+    <!--        si es necesario aca incluimos los script en JS-->
+    <script></script>
 </body>
+
 </html>

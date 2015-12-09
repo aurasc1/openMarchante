@@ -1,26 +1,227 @@
 /*MAIN CSS*/
 
-body{
-        margin: 0px;
-        padding: 0px;
+body {
         font-size: 16px;
-        font-family: Arial;
+        font-family: 'Lato', sans-serif;
 }
+
 header#barsup {
         background-color: #eee;
-        color: #333;
+        color: #7b7b7b;
         width: 100%;
         padding: 5px 0px;
-        font-size: 12px;
+        font-size: 14px;
 }
+header#barsup i {
+        margin: 0px 5px;
+}
+header#barsup span {
+        margin: 0px 5px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+}
+
 aside#moneda {
         float: left;
         margin-left: 50px;
 }
+
 nav#menustat {
         float: right;
         margin-right: 50px;
 }
+
+
+/*****
+ESTILOS PARA EL HEADER DEL CONTENIDO PRINCIPAL
+*****/
+
+article {
+        width: 960px;
+        margin: 0px auto;
+        margin-top: 20px;
+}
+
+article header form {
+        display: inline-block;
+        vertical-align: top;
+        height: 50px;
+        color: #aaa;
+        float: right;
+        margin-right: 10px;
+}
+
+article header form input {
+        height: 35px;
+        padding-left: 8px;
+        padding-right: 8px;
+}
+
+input#busqueda {
+        width: 370px;
+        /*370-16-2=352*/
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: 1px solid #eee;
+        outline: 0px;
+        transition: all 300ms ease;
+}
+
+input#busqueda:focus {
+        border-color: #66afe9;
+        box-shadow: 0px 0px 5px #66afe9;
+        transition: all 300ms ease;
+        
+}
+
+button#submit {
+        height: 39px;
+        width: 76px;
+        /*400-(300+16+2)=78 - 2 = 76*/
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: 1px solid #ccc;
+        transition: all 300ms ease;
+}
+
+button#submit:hover {
+        border: 1px solid #999;
+        transition: all 300ms ease;
+}
+
+aside#CarStatus {
+        border-radius: 8px;
+        color: #fff;
+        background-color: #333;
+        display: inline-block;
+        vertical-align: top;
+        padding: 1px 8px;
+        height: 37px;
+        line-height: 37px;
+        width: 200px;
+        text-align: center;
+        transition: all 300ms ease;
+        float: right;
+}
+aside#CarStatus:hover{
+        background-color: #151515;
+        transition: all 300ms ease;
+}
+/*****
+ESTILOS PARA NAV PRINCIPAL
+*****/
+article nav{
+        width: 940px;
+        margin-top: 10px;
+        padding: 0px 10px;
+        border-radius: 8px;
+        color: #eee;
+        background-color: #229ac8;
+        background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
+        background-repeat: repeat-x;
+        border-color: #1f90bb #1f90bb #145e7a;
+        margin-bottom: 20px;
+}
+
+article nav ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+
+}
+article nav ul li{
+        float: left;
+}
+article nav ul li a{
+        text-decoration: none;
+        color: #eee;
+        padding: 10px;
+        display: inline-block;
+        font-size: 12px;
+        transition: all 200ms ease;
+}
+article nav ul li a:hover{
+        background-color: rgba(5, 5, 5, 0.09);
+}
+/*ESTILOS PARA LOS SUBMENUS*/
+article nav ul li ul{
+        display: none;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        width: 150px;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px #222;
+}
+article nav ul li:hover ul{
+        display: block;
+}
+article nav ul li ul li{
+        width: 150px;
+        color: #585858;
+        transition: all 200ms ease;
+}
+article nav ul li ul li a{
+        width: 120px; /*150 -15 - 15 = 120*/
+        color: #222;
+        background-color: #fff;
+        transition: all 200ms ease;
+}
+article nav ul li ul li a:hover{
+        color:#fff;
+        background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
+        transition: all 200ms ease;
+}
+article nav ul li ul li:hover{
+        background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
+        color: #fff;
+        transition: all 200ms ease;
+}
+article nav ul li ul li a.mas{
+        color: #23a1d1;
+}
+article nav ul li ul li a.mas:hover{
+        color: #fff;
+}
+li.sep{
+        width: 100%;
+        border: 0px solid #000;
+        height: 1px;
+        background-color: #ddd;
+        margin: 0px;
+        padding: 0px;
+}
+
+/*ESTILOS PARA LA BARRA DE RUTA*/
+header#ruta{
+        display: none;
+}
+/*ESTILOS PARA EL CONTENIDO PRINCIPAL*/
+div#banner{
+        box-shadow: 0px 4px 3px #e2e2e2;
+        width: 960px;
+}
+div#banner img{
+        width: 100%;
+}
+/*ESTILOS PARA EL CONTENIDO DE OFERTAS*/
+div#ofertas{
+        width: 960px;
+        margin: 0px auto;
+        margin-top: 30px;
+        
+}
+div#ofertas h3{
+        font-weight: normal
+}
+div#ofertas aside{
+        width: 228px;/*960 - 15*3-X*4*/
+        height: 400px;
+        border: 1px solid #999;
+        float: left;
+}
+/*ESTILOS VARIOS*/
 div.reset {
         clear: both;
 }
