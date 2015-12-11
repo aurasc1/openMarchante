@@ -7,8 +7,22 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="shortcut icon" type="image/x-icon" href="grafitroqueil.ico" />
+    <link rel="author" type="text/plain" href="humans.txt"/>
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+
+    <script>
+      $(window).load(function(){
+          $(".flexslider").flexslider();
+      });
+    </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -24,7 +38,7 @@
             <aside id="CarStatus">
                 <i class="fa fa-shopping-cart"></i> 0 item(S) - $0.00
             </aside>
-            
+
             <form action="index.html" method="get">
                 <input id="busqueda" type="text" name="busqueda" value="palabras" required placeholder="¿Que buscas?" /><button id="submit" type="submit"><i class="fa fa-search"></i>
                 </button>
@@ -83,12 +97,29 @@
             <div class="reset"></div>
         </nav>
         <header id="ruta">
-            <i class="fa fa-home"></i>  laptops y Notebooks 
+            <i class="fa fa-home"></i>  laptops y Notebooks
         </header>
         <section>
             <!--contenido principal-->
             <div id="banner">
-                <img src="img/productos/iphone.PNG" alt="iphone">
+                    <div class="flexslider">
+                          <ul class="slides">
+                            <li>
+                              <a href=""><img src="img/slide.jpg" /></a>
+                            </li>
+                            <li>
+                              <img src="img/slide1.jpg" />
+                                <!--<p class="flex-caption">Curso html5</p>-->
+                            </li>
+                            <li>
+                              <img src="img/slide2.jpg" />
+                            </li>
+                            <li>
+                              <img src="img/slide3.jpg" />
+                            </li>
+                          </ul>
+
+                        </div>
             </div>
             <div id="ofertas">
                 <h3>OFERTAS</h3>
