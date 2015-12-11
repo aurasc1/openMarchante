@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>openMarchante</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header id="barsup">
+        <aside id="moneda"><i class="fa fa-usd"></i><span>Curency</span><i class="fa fa-caret-down"></i></aside>
+        <nav id="menustat"> <i class="fa fa-phone"><span>5530363678</span></i><i class="fa fa-user"><span>Usuario</span></i><i class="fa fa-heart"><span>Deseos</span></i><i class="fa fa-shopping-cart"><span>Compras</span></i><i class="fa fa-sign-out"><span>Cerrar Sesión</span></i></nav>
+        <div class="reset"></div>
+        <!--Considerar este encabezado como una barra de estado superior-->
+    </header>
+    <article>
+        <header>
+            <img src="img/logo.png" alt="logo">
+            <aside id="CarStatus">
+                <i class="fa fa-shopping-cart"></i> 0 item(S) - $0.00
+            </aside>
+            
+            <form action="index.html" method="get">
+                <input id="busqueda" type="text" name="busqueda" value="palabras" required placeholder="¿Que buscas?" /><button id="submit" type="submit"><i class="fa fa-search"></i>
+                </button>
+            </form>
+        </header>
+        <nav>
+            <ul>
+                <li><a>
+                    Desktops
+                    </a>
+                    <ul>
+                        <li><a href="">PC</a></li>
+                        <li><a href="">MAC</a></li>
+                        <li class="sep"></li>
+                        <li><a href="" class="mas"><strong><i>Ver todo</i></strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="">Laptops y Notebooks</a>
+                    <ul>
+                        <li><a href="">(0)</a></li>
+                        <li><a href="">(1)</a></li>
+                        <li class="sep"></li>
+                        <li><a href="" class="mas"><strong><i>Ver todo</i></strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="">Componentes</a>
+                    <ul>
+                        <li><a href="">Ratones</a></li>
+                        <li><a href="">Monitores</a></li>
+                        <li><a href="">Impresoras</a></li>
+                        <li><a href="">Scanners</a></li>
+                        <li class="sep"></li>
+                        <li><a href="" class="mas"><strong><i>Ver todo</i></strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="">Tablets</a></li>
+                <li><a href="">Software</a></li>
+                <li><a href="">Smartphones</a></li>
+                <li><a href="">Camaras</a></li>
+                <li><a href="">Reproductores MP3</a>
+                    <ul>
+                        <li><a href="">test 1(0)</a></li>
+                        <li><a href="">test 2(0)</a></li>
+                        <li><a href="">test 3(0)</a></li>
+                        <li><a href="">test 4(0)</a></li>
+                        <li><a href="">test 5(0)</a></li>
+                        <li><a href="">test 6(0)</a></li>
+                        <li><a href="">test 7(0)</a></li>
+                        <li><a href="">test 8(0)</a></li>
+                        <li><a href="">test 9(0)</a></li>
+                        <li class="sep"></li>
+                        <li><a href="" class="mas"><strong><i>Ver todo</i></strong></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="reset"></div>
+        </nav>
+        <header id="ruta">
+            <i class="fa fa-home"></i>  laptops y Notebooks 
+        </header>
+        <section>
+            <!--contenido principal-->
+            <div id="banner">
+                <img src="img/productos/iphone.PNG" alt="iphone">
+            </div>
+            <div id="ofertas">
+                <h3>OFERTAS</h3>
+                <aside>
+                    <a href=""><img src="img/productos/001.jpg" alt="audifonos"></a>
+                    <div class="tex">
+                        <h4>Auriculares Beats <br> x Hello Kitty</h4>
+                        <p>Edición especial  para el regalo ideal en estas navidades. Se trata de una colaboración especial de Beats de Dr. Dre con Sanrio para celebrar el 40 aniversario de la mundialmente conocida felina.</p>
+                    <p class="precio"><strong>$1602.00</strong></p>
+                    </div>
+                    <div class="agregar">
+                        <button class="addcar" type="button"><i class="fa fa-cart-plus"></i> <span class="hidden-xs hidden-sm hidden-md"></span>Añadir</button>
+                        <button class="infplus" type="button" data-tooltip="Añadir a la lista de deseos"><i class="fa fa-heart"></i></button>
+                        <button class="infplus" type="button" data-toggle="tooltip" title="" onclick="wishlist.add('43');" data-original-title="Añadir a la lista de deseos"><i class="fa fa-exchange"></i></button>
+                    </div>
+                </aside>
+                <aside>
+                    <a href=""><img src="img/productos/08.jpg" alt="paraguas"></a>
+                    <div class="tex">
+                        <h4>Paraguas Kokeshi</h4>
+                        <p>Preciosos paraguas con la forma de las tradicionales figuras japonesas Kokeshi. Vienen con una funda rígida que hace que cuando se guarde se convierta en una bonita pieza decorativa. Están disponibles en 5 modelos diferentes.</p>
+                        <p class="precio"><strong>$12300.00</strong></p>
+                        </div>
+                    <div class="agregar">
+                        <button class="addcar" type="button"><i class="fa fa-cart-plus"></i> <span class="hidden-xs hidden-sm hidden-md"></span>Añadir</button>
+                        <button class="infplus" type="button" data-toggle="tooltip" title="" onclick="wishlist.add('43');" data-original-title="Añadir a la lista de deseos"><i class="fa fa-heart"></i></button>
+                        <button class="infplus" type="button" data-toggle="tooltip" title="" onclick="wishlist.add('43');" data-original-title="Añadir a la lista de deseos"><i class="fa fa-exchange"></i></button>
+                    </div>
+                </aside>
+                <aside>
+                    <a href=""><img src="img/productos/1.jpg" alt="tetera"></a>
+                    <div class="tex">
+                    <h4>¿Listo para el Te?<br> Tea Kettle</h4>
+                    <p>¡La hora del Te se ha vuelto mas dulce con esta tetera con decoración de Cupcake en tu cocina!. Cuando esta tetera silba, retirala del fuego, sirve y disfruta con pasteles o galletas.</p>
+                        <p class="precio"><strong>$460.00</strong></p>
+                    </div>
+                    <div class="agregar">
+                        <button class="addcar" type="button"><i class="fa fa-cart-plus"></i> <span class="hidden-xs hidden-sm hidden-md"></span>Añadir</button>
+                        <button class="infplus" type="button" data-toggle="tooltip" title="" onclick="wishlist.add('43');" data-original-title="Añadir a la lista de deseos"><i class="fa fa-heart"></i></button>
+                        <button class="infplus" type="button" data-toggle="tooltip" title="" onclick="wishlist.add('43');" data-original-title="Añadir a la lista de deseos"><i class="fa fa-exchange"></i></button>
+                    </div>
+                </aside>
+                <aside>
+                    <a href=""><img src="img/productos/00003.jpg" alt="camara"></a>
+                    <div class="tex">
+                    <h4>Camara Holga 120fn <br>Con Flash </h4>
+                    <p>Nueva con excelente ajuste de control para una exposición adecuada que asegura una diversión garantizada, fácil de apuntar y disparar para toda la familia. </p>
+                        <p class="precio"><strong>$9800.00</strong></p>
+                    </div>
+                    <div class="agregar">
+                        <button class="addcar" type="button"><i class="fa fa-cart-plus"></i> <span class="hidden-xs hidden-sm hidden-md"></span>Añadir</button>
+                        <button class="infplus" type="button" data-toggle="tooltip" title="" onclick="wishlist.add('43');" data-original-title="Añadir a la lista de deseos"><i class="fa fa-heart"></i></button>
+                        <button class="infplus" type="button" data-toggle="tooltip" title="" onclick="wishlist.add('43');" data-original-title="Añadir a la lista de deseos"><i class="fa fa-exchange"></i></button>
+                    </div>
+                </aside>
+            </div>
+            <div class="reset"></div>
+            <div id="marcas">
+                <div>
+                    <img src="img/marcas/001.png" alt="marca 1">
+                    <img src="img/marcas/002.png" alt="marca 2">
+                    <img src="img/marcas/003.png" alt="marca 3">
+                </div>
+            </div>
+            <!--este es un slider de marcas-->
+        </section>
+    </article>
+    <footer>
+       <section class="pie" >
+        <aside>
+            <h3>Información</h3>
+            <ul>
+                <li><a href="">Acerca de</a></li>
+                <li><a href="">Información de Envio</a></li>
+                <li><a href="">Politicas de Privacidad</a></li>
+                <li><a href="">Terminos y Condiciones</a></li>
+            </ul>
+        </aside>
+        <aside>
+            <h3>Servicio al CLiente</h3>
+            <ul>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Devoluciones</a></li>
+            </ul>
+        </aside>
+        <aside>
+            <h3>Extras</h3>
+            <ul>
+                <li><a href="">Marca</a></li>
+                <li><a href="">Sugerencias</a></li>
+                <li><a href="">Afiliados</a></li>
+                <li><a href="">Especiales</a></li>
+            </ul>
+        </aside>
+        <aside>
+            <h3>Mi Cuenta</h3>
+            <ul>
+                <li><a href="">Mi cuenta</a></li>
+                <li><a href="">Historial de pedidos</a></li>
+                <li><a href="">Lista de deseos</a></li>
+                <li><a href="">Noticias</a></li>
+            </ul>
+        </aside>
+        
+        
+        
+        <div class="reset"></div>
+        <hr/>
+        
+        <p>COLABORADORES<br>Aura Suárez Cárdenas.<br>
+         Alejandro Garcia Ramirez.<br>
+        Patricia Sanchez Rufino.</p>
+        </section>
+    </footer>
+    <!--        si es necesario aca incluimos los script en JS-->
+    <script></script>
+</body>
+
+</html>
