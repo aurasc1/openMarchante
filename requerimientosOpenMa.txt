@@ -1,0 +1,91 @@
+﻿
+
+Objetivo
+
+==========
+
+Clonar el CMS llamado OpenCart
+
+
+Pagina a clonar
+===============
+								***---tareas pendientes---***
+0. [Base.html]
+	-->
+
+
+1. [Inicio]
+	-->Menu  	--> [Muestra productos de la categoria seleccionada] 					***"producto".***
+		
+
+	-->banner	--> [Muestra detalle de, producto seleccionado]						 
+	-->Busqueda	--> [Mostrar lista de productos que coincidan con las palabras de busqueda]		 
+
+	-->ofertas lista--> [Mostrar detalle de producto seleccionado]
+			  (Ver banner)
+	
+	-->Marcas 	-->[Muestra lista de productos que coincidan con la marca]
+			  (ver menu)
+	-->Bottn car-shop			-->[]Muestra lista de productos en carrito de compra]
+	-->Bottn moneda			-->[](Accion: cambiar los precios de la pagina actual a la moneda seleccionada)
+	-->Bottn deseos			-->[](Muestra lista de productos seleccionados por el usuario y que desea tener)
+	-->Bottn usuario  -->entrar	-->[](muestra el formulario para solicitar usuario y clave)
+	-->Bottn usuario  -->registrar	-->[](muestra el formulario para registrar nuevos usuarios)
+
+
+
+2. panel de administracion (localhost/openMarchante/admin)
+
+	Opcion para administrar
+	
+	pagina de panel de administracion:
+		-->[Principal]
+			-->[categorias]
+			-->[productos]
+				-[Agregar producto]
+				-[modificar un producto]
+				-[listar producto]
+					-(eliminar producto)
+			 -->template(*)
+			 -->medios de pago	en este caso paypal (*) "si se va a utilizar mas de una opcion"
+			-->[Usuarios ]
+				-(Agregar usuario)
+				-(modificar un usuario)
+				-(eliminar usuario)
+				-(listar usuarios)
+
+
+3.-
+
+
+"producto". 	definir pagina de lista de productos			(html/css)
+"categoria" 	definir pagina de lista de categorias			(html/css)
+"detalle"	definir la pagina de detalle de producto		(html/css)
+		Login 							(html, css, php y base de datos)
+		registro						(html, css, php y base de datos)
+		definir pagina de lista de productos en el carrito/deseos	(html/css)
+
+
+paginas a de entrega para el lunes
+
+1.-definir pagina de lista de productos	(utilizando html/css)
+
+2.-definir pagina de lista de categorias (utilizando html/css)
+
+3.-definir la pagina de detalle de producto (utilizando html/css)
+
+4.-Login (utilizando html, css, php y base de datos)
+
+5.-registro (utilizando html, css, php y base de datos)
+
+6.-definir pagina de lista de productos en el carrito/deseos (utilizando html/css)
+
+
+
+
+tomar tiempo;
+	recomendaciones;
+		excel de google
+		trackingtime
+			
+	
