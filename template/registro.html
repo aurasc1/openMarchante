@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>openMarchante</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="shortcut icon" type="image/x-icon" href="grafitroqueil.ico" />
+    <link rel="author" type="text/plain" href="humans.txt"/>
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+
+    <script>
+      $(window).load(function(){
+          $(".flexslider").flexslider();
+      });
+    </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header id="barsup">
+        <aside id="moneda"><i class="fa fa-usd"></i><span>Curency</span><i class="fa fa-caret-down"></i></aside>
+        <nav id="menustat"> 
+        
+        <i class="fa fa-phone"><span>5530363678</span></i>
+        <i class="fa fa-user"><span>Usuario</span></i>
+        <i class="fa fa-heart"><span>Deseos</span></i>
+        <i class="fa fa-shopping-cart"><span>Compras</span></i>
+        <i class="fa fa-sign-out"><span>Cerrar Sesión</span></i>
+        </nav>
+        <div class="reset"></div>
+        <!--Considerar este encabezado como una barra de estado superior-->
+    </header>
+    <article>
+        <header>
+            <img class="logo" src="img/logo_tripas.png" alt="logo">
+            <div id="Status">
+            <aside id="CarStatus">
+                <a class="colrosa"><i class="fa fa-shopping-basket"></i></a>
+                0 item(S) 
+                0.00
+                <a class="colrosa"><i class="fa fa-usd"></i></a>
+            </aside>
+            <aside id="premStatus">
+                <a class="colrosa"><i class="fa fa-diamond"></i></a> Hazte premiun
+            </aside>
+            <aside id="userStatus">
+                <a class="colrosa"><i class="fa fa-user-secret"></i></a>
+                Aura Paulina S..
+            </aside>
+            </div>
+
+            <form action="index.html" method="get">
+                <button id="submit" type="submit"><i class="fa fa-search"></i>
+                </button><input id="busqueda" type="text" name="busqueda" value="Buscar X marca U objeto" required placeholder="¿Que buscas?" />
+            </form>
+        </header>
+        <nav>
+            <ul>
+                <li><a>JOYERIA</a>
+                    <ul>
+                        <li><a href="">PC</a></li>
+                        <li><a href="">MAC</a></li>
+                        <li class="sep"></li>
+                        <li><a href="" class="mas"><strong><i>Ver todo</i></strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="">ROPA</a>
+                    <ul>
+                        <li><a href="">(0)</a></li>
+                        <li><a href="">(1)</a></li>
+                        <li class="sep"></li>
+                        <li><a href="" class="mas"><strong><i>Ver todo</i></strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="">DECORACION</a>
+                    <ul>
+                        <li><a href="">Ratones</a></li>
+                        <li><a href="">Monitores</a></li>
+                        <li><a href="">Impresoras</a></li>
+                        <li><a href="">Scanners</a></li>
+                        <li class="sep"></li>
+                        <li><a href="" class="mas"><strong><i>Ver todo</i></strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="">ARTE</a></li>
+                <li><a href="">JUGUETES</a></li>
+                <li><a href="">ACCESORIOS</a></li>
+                <li><a href="">CALZADO</a></li>
+                <li><strong><a href="">"NUEVOS PRODUCTOS"</a></strong>
+                    <ul>
+                        <li><a href="">test 1(0)</a></li>
+                        <li><a href="">test 2(0)</a></li>
+                        <li><a href="">test 3(0)</a></li>
+                        <li><a href="">test 4(0)</a></li>
+                        <li><a href="">test 5(0)</a></li>
+                        <li><a href="">test 6(0)</a></li>
+                        <li><a href="">test 7(0)</a></li>
+                        <li><a href="">test 8(0)</a></li>
+                        <li><a href="">test 9(0)</a></li>
+                        <li class="sep"></li>
+                        <li><a href="" class="mas"><strong><i>Ver todo</i></strong></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="reset"></div>
+        </nav>
+        <header id="ruta">
+            <i class="fa fa-home"></i>  laptops y Notebooks
+        </header>
+        <section >
+            <div id="regis"> <!-- registro -->
+            <h1>Registro</h1>
+            <p>Si ya tiene una cuenta con nosotros, por favor entre en la página de LOGIN. 
+             </br>
+            Si  aun NO tiene una cuenta con nosotros, por favor prosiga con el formulario.</p>
+            
+            <form action="registro.php" id="registro"> <!-- formulario -->
+
+            <ul>
+               <li><label for="user">Usuario <i class="fa fa-user"></i></label> 
+                <input type="text" name="usuario" placeholder="Nombre de usuario que deseas tener"required /></li>                   
+                <li ><label for="name">Nombre <i class="fa fa-child"></i></label>
+                <input type=" text" name="nombre" placeholder="Escribe tu nombre." required /></li>
+                
+                 <li><label for="name">Apellido Paterno <i class="fa fa-child"></i></label> 
+                <input type=" text" name="paterno" placeholder="Apellido Paterno." required /></li> 
+                
+                 <li><label for="name">Apellido Materno <i class="fa fa-child"></i></label> 
+                <input type=" text" name="materno" placeholder=" Apellido Materno." required /></li>
+                <li><label for="name">Pais <i class="fa fa-globe"></i></label> 
+                <input type=" text" name="pais" placeholder="Pais donde vives." required /></li>
+                <li><label for="name">Estado <i class="fa fa-street-view"></i></label> 
+                <input type=" text" name="estado" placeholder="Estado donde vives." required /></li>
+                <li><label for="name">Codigo postal <i class="fa fa-street-view"></i></label> 
+                <input type=" text" name="codigo" placeholder="Escribe tu codigo postal." required /></li>
+                <li><label for="name">Direccion <i class="fa fa-street-view"></i></label> 
+                <input type=" text" name="direccion" placeholder="Escribe el numero, calle y colonia." required /></li>
+                <li><label for="name">telefono <i class="fa fa-phone"></i></label> 
+                <input type=" text" name="telefono" placeholder="Tu numero de telefono." required /></li>
+                
+                
+                <li> <label for="email">Email <i class="fa fa-envelope"></i></label> 
+                <input id="email1"  type="email" name="email1" placeholder="Tu Correo electronico" required onkeyup="validaemail()"/></li>
+                
+                <li> <label for="email">Confirmar su Email <i class="fa fa-envelope"></i></label> 
+                <input id="email2"  type="email" name="email2" placeholder="Confirmar el correo electronico" required onkeyup="validaemail()" /> 
+                </li>
+                    <div id="avisoreg3" ></div>
+                <!--<span class="requeridos">Forma correcta: "name@something.com"</span>-->
+                    
+                <li> <label for="password"> Password <i class="fa fa-key"></i></label> 
+                <input id="passw1" type="password"  name="password1" placeholder="Ingresar contraseña mayor a 8 caracteres."  size="15" maxlength="20" required onkeyup="validarpass1()" onkeyup="validarpass2()"/>
+                </li>
+                <!-- texto contraseña-->
+                    <div id="aviso" ></div>
+                    <div id="aviso1" ></div>
+                    <div id="aviso2" ></div>
+                    <div id="aviso3" ></div>
+                   <!-- botones-->
+                
+                <li> <label for="repass">Confirmar su Password<i class="fa fa-key"></i></label> 
+                <input id="passw2" type="password" name="password2" placeholder="Confirmar tu contraseña" size="15" maxlength="20" required onkeyup="validarpass1()" onkeyup="validarpass2()"/></li>  
+                <div id="avisoreg2" ></div>
+               
+            </ul>
+            <div id="butpoli">  
+           <h6> He leído y acepto la</h6> <a class="pol" href=""><b>Politica de privacidad</b>
+            <input type="checkbox" name="agree" value="1"></a> 
+            </div>
+            <div id="butreg">  
+            <button class="buton" id="registrar" class="submit" type="submit"><i class="fa fa-user-plus"></i> Registrarse</button>
+            
+            </div>
+            </form> <!-- termina formulario -->
+                </div> <!-- termina registro -->
+                <div id="menu">
+                    <a class="lo" href="login.html"><i class="fa fa-sign-in"></i> Login  </i></a>
+                
+                    <a class="re" href="registro.html"><i class="fa fa-user-plus"></i> Registro  </i></a>
+                 </div> 
+             <div class="reset"></div>
+        </section>
+    </article>
+    <footer>
+       <section class="pie" >
+        <aside>
+            <h3>Información</h3>
+            <ul>
+                <li><a href="">¿Qué es Tripas Creativas?</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Compromiso solidario</a></li>
+                <li><a href="">Condiciones de uso</a></li>
+                <li><a href="">Información de Envio</a></li>
+                <li><a href="">Privacidad y cookies</a></li>
+                <li><a href="">Terminos y Condiciones</a></li>
+            </ul>
+        </aside>
+        <aside>
+            <h3>Servicio al CLiente</h3>
+            <ul>
+              <li><a href="">Ayuda</a></li>
+               <li><a href="">Premiun</a></li>
+               <li><a href="">Afiliados</a></li>
+               <li><a href="">Devoluciones</a></li> 
+               <li><a href="">Contacto</a></li>           
+            </ul>
+        </aside>
+        <aside>
+            <h3>Extras</h3>
+            <ul>
+                <li><a href="">Prensa y comunicación</a></li>
+                <li><a href="">Contacto para Marcas</a></li>
+                <li><a href="">Sugerencias</a></li>
+            </ul>
+        </aside>
+        <aside>
+            <h3>Mi Cuenta</h3>
+            <ul>
+                <li><a href="">Mi cuenta</a></li>
+                <li><a href="">Historial de pedidos</a></li>
+                <li><a href="">Lista de deseos</a></li>
+                <li><a href="">Noticias</a></li>
+            </ul>
+        </aside>
+        <div>
+            <h1>Tripas Creativas</h1>
+        </div>
+        
+        <div class="reset"></div>
+        <hr/>
+        <aside>
+            
+            <ul>
+                <li class="iconFoterv"><i class="fa fa-users"></i>Equipo:</li>
+                <li class="iconFoterr"><i class="fa fa-star"></i><a class="fotex">Aura Suárez C.</a></li>
+                <li class="iconFoterv"><i class="fa fa-camera-retro"></i><a class="fotex">Alejandro Garcia R.</a></li>
+                <li class="iconFoterr"><i class="fa fa-rocket"></i><a class="fotex">Patricia Sanchez R.</a></li>
+                <li class="iconFoterv">TDW2.0</li>
+                
+            </ul>
+        </aside>
+        <aside>
+            
+            <ul>
+              <li><a class="iconFote" href=""><i class="fa fa-facebook-square"></i></a>
+                  <a class="iconFot" href=""><i class="fa fa-twitter-square"></i></a>
+                  <a class="iconFote" href=""><i class="fa fa-rss-square"></i></a>
+              </li>
+               
+               <li>
+                  <a class="iconFot" href=""><i class="fa fa-youtube-square"></i></a> 
+                  <a class="iconFote" href=""><i class="fa fa-instagram"></i></a> 
+                  <a class="iconFot" href=""><i class="fa fa-google-plus-square"></i></i></a>
+                </li>          
+            </ul>
+        </aside>
+        <aside>
+            
+            <ul>
+                <li>
+                    <a class="iconFote" href=""><i class="fa fa-apple"></i></a>
+                    <a class="iconFot" href=""><i class="fa fa-android"></i></a>
+                    <a class="iconFote" href=""><i class="fa fa-windows"></i></i></a>
+                </li>
+            </ul>
+        </aside>
+        <aside>
+            <ul>
+                <li>
+                    <a class="iconFot" href=""><i class="fa fa-cc-paypal"></i></a>
+                    <a class="iconFote" href=""><i class="fa fa-cc-visa"></i></a>
+                    <a class="iconFot" href=""><i class="fa fa-cc-mastercard"></i></a>
+                </li>
+            </ul>
+        </aside>
+        <div>
+            <h4>Tripas Creativas es la tienda en linea lider en mexico 2016</h4>
+        </div>
+        
+        
+        <div class="reset"></div>
+        </section>
+    </footer>
+    <!--        si es necesario aca incluimos los script en JS-->
+    <script>
+             function tieneMinuscula(pass) {
+                /* Este bloque analiza el contenido de pass para ver si tiene
+                   una minúscula, si es así entonces regresa un valor de true,
+                   si no hay una minúscula en todo el pass entonces regresa un
+                   valor de false */
+
+                /* minus tiene todas las minúsculas posibles */
+                var minus = "abcdefghijklmnñopqrstwxyz";
+             
+                /* Primero hay que obtener cada símbolo del pass escrito por
+                   el usuario */
+                for(i=0; i<pass.length; i+=1) {
+                    /* Hacemos que i vaya variando desde 0 hasta el último
+                       símbolo o letra de pass, así que pass[i] tiene el
+                       símbolo que tenemos que analizar */
+                       if(minus.search(pass[i]) > -1) {
+                           /* minus.search(algo) busca lo que uno ponga entre
+                              paréntesis dentro de la cadena o string, en este
+                              caso se busca lo que tenga pass[i], si la búsqueda
+                              es existosa, quiere decir que encontramos una
+                              minúscula y el pass pasaría esta prueba, así que
+                              entonces regresamos un valor true */
+                            return true;
+                       }
+                        
+                } /* termina for() */
+
+                /* Si llegamos hasta acá quiere decir que ya revisamos todas
+                   las letras del password y no encontramos una minúscula,
+                   así que regresamos un valor de false, ya que el pass no
+                   cumple con la prueba. */
+                return false;
+            } /* termina function tieneMinuscula(pass) */
+            
+            
+            
+            function tieneMayuscula(pass) {
+                var mayus = "ABCDEFGHIJKLMNÑOPQRSTWXYZ";
+                for(i=0; i<pass.length; i++) {
+                       if(mayus.search(pass[i]) > -1) {
+                            return true;
+                        }  
+                        
+                } 
+                            return false;
+            } /* termina function tieneMayucsula(pass) */
+
+              function tieneNumero(pass) {
+                var numers = "0123456789";
+                for(i=0; i<pass.length; i+=1) {
+                       if(numers.search(pass[i]) > -1) {
+                            return true;
+                       }  
+                } 
+                return false;
+            } /* termina function tieneNumero(pass) */
+
+
+            function validarpass1() {
+                   if(passw1.value == passw2.value) {
+                /*Eso es para cuando password son correctos*/    
+                    /*activar mensaje de correcto*/
+                        passw1.style.color = "";
+                        passw2.style.color = "";
+                        registrar.disabled=false;
+                        avisoreg2.innerHTML="Su password coincide.";
+                        avisoreg2.style.color = "#0e4240";
+                    
+                    
+                    
+                    } else {
+                         /*Eso es para cuando password NO son correctos*/    
+                        /*activar mensaje de error*/
+                        passw1.style.color = "";
+                        passw2.style.color = "";
+                        registrar.disabled= true;
+                        avisoreg2.innerHTML="Su password NO coincide.";
+                        avisoreg2.style.color = "#cc2323";
+                    }
+                
+                /* Realiza la acción de validar el pass */
+
+                /* var pass es equivalente al camp input del password del html */
+                var pass = document.getElementById('passw1').value;
+                /* long será la longitud del password escrito por el usuario */
+                var long = pass.length;
+                var input = document.getElementById('passw1');
+                var ingresar = document.getElementById('registrar');
+
+               /* Este if valida la longitud correcta del pass */
+                if(long >=8) {
+                    /* Botón en verde activo */
+                    input.style.backgroundColor = "";
+                    registrar.disabled=false;
+                    aviso.innerHTML="";
+                } else {
+                    /* Botón en rojo inactivo */
+                    input.style.backgroundColor = "rgba(255, 0, 0, 0.21)";
+                    registrar.disabled=true;
+                    aviso.innerHTML="<br/>Ingrese una contraseña mayor a 8 caracteres";
+                } /* termina if(long>=6) */
+
+                /* --///-- Este if valida si incluye una minúscula---////---- */
+                if(tieneMinuscula(pass)) {
+                    ingresar.disabled=false;
+                    aviso1.innerHTML="";
+                } else {
+                    ingresar.disabled=true;
+                    aviso1.innerHTML ="<br/>Su password debe tener una minúscula.";
+                } 
+                /* --///--  valida si incluye una MAYUSCULA---////---- */
+                if(tieneMayuscula(pass)) {
+                    ingresar.disabled=false;
+                    aviso2.innerHTML="";
+                } else {
+                    ingresar.disabled=true;
+                    aviso2.innerHTML ="<br/>Su password debe tener una MAYUSCULA.";
+                } 
+                /* --///--  valida si incluye un numero---////---- */
+                if(tieneNumero(pass)) {
+                    ingresar.disabled=false;
+                    aviso3.innerHTML="";
+                } else {
+                    ingresar.disabled=true;
+                    aviso3.innerHTML ="<br/>Su password debe tener un numero.";
+                }/* --///-- termina (tieneNumero(pass))---////---- */
+            } /* termina function valida() */
+            
+            
+            
+            
+            </script>
+            
+   
+              <script>
+            function validaemail() {
+              /* valida que los campos input email1 y email2 contengan el mismo correo y permitir al usuario continuar, si los campos son distintos inhabilitar el boton de enviar y si es posible indicar un mensaje indicando el por que */
+                
+                /*email1.valor:: contiene el texto del primer email escrito por el usuario*/ 
+                /*email2.valor:: contiene el texto de confirmacion de email escrito por el usuario*/
+                
+                    if(email1.value == email2.value) {
+                /*Eso es para cuando los email son correctos*/    
+                    /*activar mensaje de correcto*/
+                        email1.style.backgroundColor = "";
+                        email2.style.backgroundColor = "";
+                        registrar.disabled=false;
+                        avisoreg3.innerHTML="Su email coincide.";
+                        avisoreg3.style.color = "#0e4240";
+                    
+                    
+                    
+                    } else {
+                         /*Eso es para cuando los email NO son correctos*/    
+                        /*activar mensaje de error*/
+                        email1.style.backgroundColor = "rgba(255, 0, 0, 0.21)";
+                        email2.style.backgroundColor = "rgba(255, 0, 0, 0.21)";
+                        registrar.disabled=true;
+                        avisoreg3.innerHTML="Su email NO coincide.";
+                        avisoreg3.style.color = "#e8165f";
+                    }
+                
+                 }
+                </script>
+</body>
+
+</html>

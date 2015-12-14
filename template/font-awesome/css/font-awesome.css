@@ -1140,6 +1140,7 @@
 .fa-dollar:before,
 .fa-usd:before {
   content: "\f155";
+    color: aqua;
 }
 .fa-rupee:before,
 .fa-inr:before {

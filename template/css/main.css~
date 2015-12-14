@@ -42,6 +42,7 @@ article {
         margin: 0px auto;
         margin-top: 20px;
 }
+
 article header form {
         display: inline-block;
         vertical-align: top;
@@ -50,11 +51,11 @@ article header form {
         float: left;
         margin-right: 10px;
 }
+
 article header form input {
         height: 35px;
         padding-left: 8px;
         padding-right: 8px;
-    
 }
 
 input#busqueda {
@@ -66,6 +67,7 @@ input#busqueda {
         outline: 0px;
         transition: all 300ms ease;
 }
+
 input#busqueda:focus {
         border-color: #66afe9;
         box-shadow: 0px 0px 5px #66afe9;
@@ -83,68 +85,31 @@ button#submit {
         transition: all 300ms ease;
         
 }
+
 button#submit:hover {
         border: 1px solid #999;
         transition: all 300ms ease;
 }
 
-div#Status{
+aside#CarStatus {
+        border-radius: 8px;
+        
         display: inline-block;
         vertical-align: top;
         padding: 1px 8px;
-        width: 250px;
-        text-align: center;
-        transition: all 300ms ease;
-        float: right;
-}
-aside#CarStatus {
-        vertical-align: top;
-        padding: 1px 8px;
-        height: 25px;
-        width: 250px;
+        height: 37px;
         line-height: 37px;
+        width: 250px;
         text-align: center;
         transition: all 300ms ease;
         float: right;
-        font-size: 13px
 }
 aside#CarStatus:hover{
-        background-color: rgba(216, 219, 226, 0.85);
+        background-color: #151515;
         transition: all 300ms ease;
 }
-#userStatus {
-        display: inline-block;
-        vertical-align: top;
-        height: 25px;
-        width: 125px;
-        text-align: center;
-        float: right;
-        font-size: 13px
-}
-#userStatus:hover{
-        background-color: #d8dbe2;
-        transition: all 300ms ease;
-}
-#premStatus {
-        display: inline-block;
-        vertical-align: top;
-        height: 25px;
-        width: 125px;
-        text-align: center;
-        float: right;
-        font-size: 13px
-}
-#premStatus:hover{
-        background-color: #d8dbe2;
-        transition: all 300ms ease;
-}
-.colrosa {    /*color de los iconos*/
-    color: #ed337e;
-    font-size: 18px;
-}
-
 header img.logo{
-     margin-left: 30px;
+     margin-left: 87px;
 }
 /*****
 ESTILOS PARA NAV PRINCIPAL
@@ -155,8 +120,8 @@ article nav{
         padding: 0px 10px;
         border-radius: 8px;
         color: #eee;
-        background-color: #0a815b;
-        background-image: linear-gradient(to bottom, #0a815b, #0a815b);
+        background-color: #0b4340;
+        background-image: linear-gradient(to bottom, #23a1d1, #09865e);
         background-repeat: repeat-x;
         border-color: #1f90bb #1f90bb #145e7a;
         margin-bottom: 20px;
@@ -344,13 +309,6 @@ div#ofertas .infplus{
 div#ofertas .addcar{
         width: 130px;
 }
-
-
-
-
-
-
-
 /*ESTILOS PARA EL CONTENIDO DE MARCAS*/
 div#marcas{
         width: 960px;
@@ -364,26 +322,37 @@ div#marcas img{
         margin-right: 50px;
 }
 
-/*/-/-/-/ ------ inicia footer ------////*/
+/* empieza el footer */
+
+
 footer {
     background-color: #303030;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
+    
+    /* width: 100%;
+    color: #e2e2e2; 
+    border-top: 1px solid #ddd;
+     */
 }
 
 footer section {
     width: 960px;
     margin:0px auto;
 }
+
 footer section aside{
     float: left;
-    width: 150px;
+    width: 200px;
     margin: 15px;
     color: #fff;
     font-size: 12px;
 }
+
+
+
 
 footer section aside ul{
         margin: 0px;
@@ -391,395 +360,154 @@ footer section aside ul{
         list-style: none;
         color: #ccc;
 }
+
 footer section aside ul li a{
         text-decoration: none;
         color: #ccc;
         font-size: 12px;
         transition: all 200ms ease;
 }
+
 footer section aside ul li a:hover{
        color: #fcf3f3;
 }
+
+
 footer section hr {
-    
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-top: none;
     border-bottom: 1px solid #666;
+    
     display: block;
 }
+
 footer section p {
     font-size: 12px;
     color: #ccc;
     line-height: 16px;
 }
-/* estilos para los iconos de footer*/
-.iconFot {     
-    color: #e7367a;
-    margin: 3px;
-    font-size: 25px;
-}
-.iconFote {
-    color: #cc97ab;
-    margin: 3px;
-    font-size: 25px;
-}
-.iconFoterv {
-    color: #0f8360;
-   font-size: 20px;
-}
-.iconFoterr {
-    color: #e7367a;
-    margin: 3px;
-    font-size: 20px;
-}
-.fotex {
-    color: #cc97ab;
-    font-size: 15px;
-}           
- /* terminan estilos para los iconos de footer*/
+/*/-/-/-/ ------ inicia login.html ------////*/}
 
 
-/*/-/-/-/ ------ inicia PAGINA login.html ------////*/
-section#pagLOG{
-    width: 960px;
-    padding:30px 0px 50px 0px ;
-}
-/*--  div id="registro" ---*/
-div#hrefRegistro {
-    width: 300px;
-    font-family: Helvetica;
-    margin-top:40px;
-    margin-left: 30px;
-    margin-right: 30px;
-    border: 1px solid #cd96ab;
-    border-radius: 5px;
-    box-shadow:inset  0px 0px 30px #f6bed7;
-    display: block;
-    float: left;
+div#contLog{
+     width: 960px;
+    height: 400px;
+    
 }
 
-div#hrefRegistro h1{
-     font-family: Helvetica;
-     color: #ed337e;
-     text-align:  center;
-     font-size: 30px;
-}
-div#hrefRegistro h2 {
-    font-family: Helvetica;
-    color: aliceblue;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 2px;
-}
-div#hrefRegistro p{
-        color: #10825e;
-        font-size: 12px;
-        line-height: 19px;
-        margin: 0% 7%;
-}
-div#hrefRegistro a{
-  display: inline-block;
-  height: 35px;
-  width: 40%;
-  background-color: #10825e;
-  margin: 5% 30%;
-  margin-top: 30px;
-  border: 1px solid #00FF72;
-  border-radius: 10px;
-  text-align: center;
-  color: #d8dbe2;
-  line-height: 35px;
-}
-div#hrefRegistro a:hover{
-  background-color: #0f4142;
-  color: #ededef;
-}
-
-/*--  div id="login" ---*/
-div#login {
+aside#iniReg {
+    background-color: #7ba1d4;
     width: 320px;
-    font-family: Helvetica;
-    margin: 20px;
-    border: 1px solid #cd96ab;
-    border-radius: 5px;
-    box-shadow:inset  0px 0px 30px #f6bed7;
-    display: block;
+    height: 100px;
+    margin: 0px 20px 0px 20px;
     float: left;
 }
-    /*--   texto   ---*/
-div#login form h1{
-     font-family: Helvetica;
-     color: #ed337e;
-     text-align:  center;
-     font-size: 30px;
+aside#login {
+    background-color: #ededef;
+    width: 320px;
+    margin: 0px 20px 0px 20px;
+    border: 3px solid #cd96ab;
+    border-radius: 5px;
+    box-shadow:inset  0px 0px 10px #000;
 }
-div#login form p{
-        color: #10825e;
-        font-size: 12px;
-        line-height: 19px;
-        margin: 0% 15% 5% 17%;
-}
-    /*-- form input login ---*/
-.input-group-addon {
-    margin: 45%;
-    font-size: 25px;
-    color: #29282e;
-    
-}
-div#login form input {
-    width: 50%;
-    height: 25px;
-    margin: 1% 25%;
-    color: #ed337e;
-    text-align: center;
-    border: 1px solid #eee;
-}
-div#login form input:focus {
-        border-color: #66afe9;
-        box-shadow: 0px 0px 5px #66afe9;
-        transition: all 300ms ease;
 
+    /*--   texto  "login" ---*/
+aside#login form h1{
+     font-family: caladea;
+     text-align:  center;
+     font-size: 25px;
 }
+
+    /*-- form input login ---*/
+.logiIn {
+    width:180px;
+    height: 20px;
+    margin-left: 60px;
+    margin-top: 5px;
+    color: #28A5B5;
+    text-align: center;
+    border-radius: 5px;
+}
+
     /*--   texto "ingresar" ---*/
-div#login form h2 {
+form h2 {
     font-family: Helvetica;
     color: aliceblue;
     text-align: center;
-    font-size: 12px;
-    margin-top: 2px;
+    font-size: 50%;
 }
-   /*--   aviso validacion de password  ---*/
-div#login form #aviso {
+   /*--   texto "contraseña" ---*/
+form h3 {
+     font-family: Helvetica;
+    color: aliceblue;
     text-align: center;
-    color: #cf95ab;
-    font-size: 15px;
-    margin-top: -10px;
-}
-div#login form #aviso1 {
-    text-align: center;
-    color: #cc97ab;
-    font-size: 15px;
-    margin-top: -15px;
-}
-div#login form #aviso2 {
-    text-align: center;
-    color: #cc97ab;
-    font-size: 15px;
-    margin-top: -15px;
-}
-div#login form #aviso3 {
-    text-align: center;
-    color: #cc97ab;
-    font-size: 15px;
-    margin-top: -15px;
-}
-    /*-- Button  ---*/
-.buton{
-  display: inline-block;
-  height: 35px;
-  width: 40%;
-  background-color: #10825e;
-  margin: 5% 30%;
-  margin-top: 30px;
-  border: 1px solid #00FF72;
-  border-radius: 10px;
-  text-align: center;
-  color: #d8dbe2;
-  line-height: 35px;
-}
-.buton:hover{
-  background-color: #0f4142;
-  color: #ededef;
-}
-
-    /*--  div id="menu" ---*/
-div#menu {
-    width: 150px;
-    font-family: Helvetica;
-    margin: 20px;
-    border: 1px solid #cd96ab;
-    border-radius: 5px;
-    box-shadow:inset  0px 0px 30px #f6bed7;
-    display: block;
-    float: right;
-}
-div#menu a.lo{
-    display: inline-block;
-    width: 80%;
-    margin: 10%;
-    border: 1px solid #d8dbe2;
-    text-align: center;
-    color: #10825e;
-    line-height: 40px;
-}
-div#menu a.lo:hover{
-  background-color: #0f4142;
-  color: #ededef;
-  border-radius: 15px;
-}
-div#menu a.re{
-  display: inline-block;
-    width: 80%;
-    margin: 10%;
-    border: 1px solid #d8dbe2;
-    text-align: center;
-    color: #10825e;
-    line-height: 40px;
-    margin-top: -0px;
-}
-div#menu a.re:hover{
-  background-color: #0f4142;
-  color: #ededef;
-  border-radius: 15px;
-}
-/*/-/-/-/ ------ termina PAGINA registro.html ------////*/
-
-
-/*/-/-/-/ ------ inicia PAGINA registro.html ------////*/
-#regis ul li {
-    list-style-type: none;
-}
-/*/-/-/-/  inicia registro.html   ////*/
-div#regis {
-    width: 600px;
-    font-family: Helvetica;
-    margin-top:0px;
-    margin-left: 90px;
-    border: 1px solid #cd96ab;
-    border-radius: 5px;
-    box-shadow:inset  0px 0px 30px #f6bed7;
-    display: block;
-    float: left;
-}
-    /*Titulo de registro */
-div#regis h1 {
-    font-family: Helvetica;
-    color: #ed337e;
-    text-align: center;
-    font-size: 30px;
-}
-div#regis p{
-        color: #10825e;
-        font-size: 12px;
-        line-height: 19px;
-            margin: 0px 5% 0px 15%;
-}
-
-    /* form*/
-div#regis form{
-    text-align: right;
-    margin-right: 50px;
-}
-div#regis form li label{
-    text-align: right;
-    color: #A3A6AD;
-    margin-right: 15px;
-}
-/*-- form input registro ---*/
-div#regis form ul li input {
-    width: 60%;
-    height: 25px;
-    color: #0e4240;
-    text-align: left;
-    margin: 5px 0px;
-    border-radius: 4px;
-    border: 1px solid #eee;
-}
-div#regis form ul li input:focus {
-        border-color: #f9bdd7;
-        box-shadow: 0px 0px 5px #cc97ab;
-        transition: all 300ms ease;
-
-}
-
-#avisoreg2 {
-    text-align: center;
-    
-    font-size: 15px;
-    margin-top: 5px;
-    padding: 5px;
-}
-#avisoreg3 {
-    text-align: center;
-   
-    font-size: 15px;
-    margin-top: 5px;
-    padding: 5px;
+    font-size: 10%;
 }
 
 #aviso {
-     text-align: center;
-    color: #cf95ab;
+    text-align: center;
+    color: #fff;
     font-size: 15px;
     margin-top: -10px;
 }
 #aviso1 {
-     text-align: center;
-    color: #cf95ab;
+    text-align: center;
+    color: #fff;
     font-size: 15px;
-    margin-top: -10px;
+    margin-top: -15px;
 }
 #aviso2 {
-     text-align: center;
-    color: #cf95ab;
+    text-align: center;
+    color: #fff;
     font-size: 15px;
-    margin-top: -10px;
-    
+    margin-top: -15px;
 }
 #aviso3 {
-     text-align: center;
-    color: #cf95ab;
+    text-align: center;
+    color: #fff;
     font-size: 15px;
-    margin-top: -10px;
-
+    margin-top: -15px;
 }
 
-    /*-- Button login registro ---*/
-div#regis form div#butpoli{
-    display: inline-block;
-    width: 60%;
-    height: 35px;
-    margin: 0% 20%;
-  
+    /*-- Button login ingresar ---*/
+.logiBut {
+    background-color: #158CB5;
+    font-family: caladea;
+    font-size: 20px;
+    color: #fff;
+    width: 40%;
+    height: 30px;
+    margin: 5% 30%;
+    margin-top: 30px;
+    border-radius: 7px;
+    box-shadow: 0px 2px 0px;
 }
-div#regis form div#butpoli h6{
-    display: inline-block;
-    font-size: 12px;
+.logiBut:hover {
+    background-color: #00A99D;
 }
-div#regis form div#butpoli a{
-  display: inline-block;
-  text-align: center;
-    text-decoration: none;
-    font-size: 12px;
-    
+
+
+aside#iniReg {
+    background-color: #4fddd7;
+    width: 320px;
+    margin: 0px 20px 0px 20px;
+    float: left:       
 }
-div#regis form div#butpoli a:hover{
-  
-  color: #e8165f;
+
+aside#menuLogReg {
+    background-color: #4fddd7;
+    width: 320px;
+    margin: 0px 20px 0px 20px;
+    float: left:
+        
 }
-div#regis form div#butreg a{
-    display: inline-block;
-  height: 35px;
-  width: 40%;
-  background-color: #10825e;
-  margin: 1% 23%;
-  border: 1px solid #00FF72;
-  border-radius: 10px;
-  text-align: center;
-  color: #d8dbe2;
-  line-height: 35px;
-}
-div#regis form div#butreg a:hover{
-   background-color: #0f4142;
-  color: #ededef;
-}
-/*/-/-/-/ ------ termina PAGINA registro.html ------////*/
+
+
+
+
+
 /*ESTILOS VARIOS*/
 div.reset {
         clear: both;
 }
-
-
-
-
-
-
